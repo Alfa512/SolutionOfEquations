@@ -135,7 +135,6 @@
   <ItemGroup>
     <ClCompile Include="Generator.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="NewClass1.cpp" />
     <ClCompile Include="SM4.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -143,7 +142,6 @@
     <ClInclude Include="Main.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="NewClass1.h" />
     <ClInclude Include="SM4.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
