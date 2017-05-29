@@ -1,4 +1,5 @@
 #include "SM4.h"
+#include <msclr\marshal_cppstd.h>
 
 namespace SolutionOfEquations {
 
@@ -117,71 +118,71 @@ namespace SolutionOfEquations {
 	private: System::Windows::Forms::CheckBox^  X50;
 	private: System::Windows::Forms::CheckBox^  X49;
 	private: System::Windows::Forms::CheckBox^  X48;
-private: System::Windows::Forms::CheckBox^  X127;
-private: System::Windows::Forms::CheckBox^  X126;
-private: System::Windows::Forms::CheckBox^  X125;
-private: System::Windows::Forms::CheckBox^  X124;
-private: System::Windows::Forms::CheckBox^  X123;
-private: System::Windows::Forms::CheckBox^  X122;
-private: System::Windows::Forms::CheckBox^  X121;
-private: System::Windows::Forms::CheckBox^  X120;
-private: System::Windows::Forms::CheckBox^  X119;
-private: System::Windows::Forms::CheckBox^  X118;
-private: System::Windows::Forms::CheckBox^  X117;
-private: System::Windows::Forms::CheckBox^  X116;
-private: System::Windows::Forms::CheckBox^  X115;
-private: System::Windows::Forms::CheckBox^  X114;
-private: System::Windows::Forms::CheckBox^  X113;
-private: System::Windows::Forms::CheckBox^  X112;
-private: System::Windows::Forms::CheckBox^  X111;
-private: System::Windows::Forms::CheckBox^  X110;
-private: System::Windows::Forms::CheckBox^  X109;
-private: System::Windows::Forms::CheckBox^  X108;
-private: System::Windows::Forms::CheckBox^  X107;
-private: System::Windows::Forms::CheckBox^  X106;
-private: System::Windows::Forms::CheckBox^  X105;
-private: System::Windows::Forms::CheckBox^  X104;
-private: System::Windows::Forms::CheckBox^  X103;
-private: System::Windows::Forms::CheckBox^  X102;
-private: System::Windows::Forms::CheckBox^  X101;
-private: System::Windows::Forms::CheckBox^  X100;
-private: System::Windows::Forms::CheckBox^  X99;
-private: System::Windows::Forms::CheckBox^  X98;
-private: System::Windows::Forms::CheckBox^  X97;
-private: System::Windows::Forms::CheckBox^  X96;
-private: System::Windows::Forms::CheckBox^  X95;
-private: System::Windows::Forms::CheckBox^  X94;
-private: System::Windows::Forms::CheckBox^  X93;
-private: System::Windows::Forms::CheckBox^  X92;
-private: System::Windows::Forms::CheckBox^  X91;
-private: System::Windows::Forms::CheckBox^  X90;
-private: System::Windows::Forms::CheckBox^  X89;
-private: System::Windows::Forms::CheckBox^  X88;
-private: System::Windows::Forms::CheckBox^  X87;
-private: System::Windows::Forms::CheckBox^  X86;
-private: System::Windows::Forms::CheckBox^  X85;
-private: System::Windows::Forms::CheckBox^  X84;
-private: System::Windows::Forms::CheckBox^  X83;
-private: System::Windows::Forms::CheckBox^  X82;
-private: System::Windows::Forms::CheckBox^  X81;
-private: System::Windows::Forms::CheckBox^  X80;
-private: System::Windows::Forms::CheckBox^  X79;
-private: System::Windows::Forms::CheckBox^  X78;
-private: System::Windows::Forms::CheckBox^  X77;
-private: System::Windows::Forms::CheckBox^  X76;
-private: System::Windows::Forms::CheckBox^  X75;
-private: System::Windows::Forms::CheckBox^  X74;
-private: System::Windows::Forms::CheckBox^  X73;
-private: System::Windows::Forms::CheckBox^  X72;
-private: System::Windows::Forms::CheckBox^  X71;
-private: System::Windows::Forms::CheckBox^  X70;
-private: System::Windows::Forms::CheckBox^  X69;
-private: System::Windows::Forms::CheckBox^  X68;
-private: System::Windows::Forms::CheckBox^  X67;
-private: System::Windows::Forms::CheckBox^  X66;
-private: System::Windows::Forms::CheckBox^  X65;
-private: System::Windows::Forms::CheckBox^  X64;
-		private: System::Windows::Forms::CheckBox^  Y0;
+	private: System::Windows::Forms::CheckBox^  X127;
+	private: System::Windows::Forms::CheckBox^  X126;
+	private: System::Windows::Forms::CheckBox^  X125;
+	private: System::Windows::Forms::CheckBox^  X124;
+	private: System::Windows::Forms::CheckBox^  X123;
+	private: System::Windows::Forms::CheckBox^  X122;
+	private: System::Windows::Forms::CheckBox^  X121;
+	private: System::Windows::Forms::CheckBox^  X120;
+	private: System::Windows::Forms::CheckBox^  X119;
+	private: System::Windows::Forms::CheckBox^  X118;
+	private: System::Windows::Forms::CheckBox^  X117;
+	private: System::Windows::Forms::CheckBox^  X116;
+	private: System::Windows::Forms::CheckBox^  X115;
+	private: System::Windows::Forms::CheckBox^  X114;
+	private: System::Windows::Forms::CheckBox^  X113;
+	private: System::Windows::Forms::CheckBox^  X112;
+	private: System::Windows::Forms::CheckBox^  X111;
+	private: System::Windows::Forms::CheckBox^  X110;
+	private: System::Windows::Forms::CheckBox^  X109;
+	private: System::Windows::Forms::CheckBox^  X108;
+	private: System::Windows::Forms::CheckBox^  X107;
+	private: System::Windows::Forms::CheckBox^  X106;
+	private: System::Windows::Forms::CheckBox^  X105;
+	private: System::Windows::Forms::CheckBox^  X104;
+	private: System::Windows::Forms::CheckBox^  X103;
+	private: System::Windows::Forms::CheckBox^  X102;
+	private: System::Windows::Forms::CheckBox^  X101;
+	private: System::Windows::Forms::CheckBox^  X100;
+	private: System::Windows::Forms::CheckBox^  X99;
+	private: System::Windows::Forms::CheckBox^  X98;
+	private: System::Windows::Forms::CheckBox^  X97;
+	private: System::Windows::Forms::CheckBox^  X96;
+	private: System::Windows::Forms::CheckBox^  X95;
+	private: System::Windows::Forms::CheckBox^  X94;
+	private: System::Windows::Forms::CheckBox^  X93;
+	private: System::Windows::Forms::CheckBox^  X92;
+	private: System::Windows::Forms::CheckBox^  X91;
+	private: System::Windows::Forms::CheckBox^  X90;
+	private: System::Windows::Forms::CheckBox^  X89;
+	private: System::Windows::Forms::CheckBox^  X88;
+	private: System::Windows::Forms::CheckBox^  X87;
+	private: System::Windows::Forms::CheckBox^  X86;
+	private: System::Windows::Forms::CheckBox^  X85;
+	private: System::Windows::Forms::CheckBox^  X84;
+	private: System::Windows::Forms::CheckBox^  X83;
+	private: System::Windows::Forms::CheckBox^  X82;
+	private: System::Windows::Forms::CheckBox^  X81;
+	private: System::Windows::Forms::CheckBox^  X80;
+	private: System::Windows::Forms::CheckBox^  X79;
+	private: System::Windows::Forms::CheckBox^  X78;
+	private: System::Windows::Forms::CheckBox^  X77;
+	private: System::Windows::Forms::CheckBox^  X76;
+	private: System::Windows::Forms::CheckBox^  X75;
+	private: System::Windows::Forms::CheckBox^  X74;
+	private: System::Windows::Forms::CheckBox^  X73;
+	private: System::Windows::Forms::CheckBox^  X72;
+	private: System::Windows::Forms::CheckBox^  X71;
+	private: System::Windows::Forms::CheckBox^  X70;
+	private: System::Windows::Forms::CheckBox^  X69;
+	private: System::Windows::Forms::CheckBox^  X68;
+	private: System::Windows::Forms::CheckBox^  X67;
+	private: System::Windows::Forms::CheckBox^  X66;
+	private: System::Windows::Forms::CheckBox^  X65;
+	private: System::Windows::Forms::CheckBox^  X64;
+	private: System::Windows::Forms::CheckBox^  Y0;
 	private: System::Windows::Forms::CheckBox^  Y15;
 
 
@@ -260,71 +261,82 @@ private: System::Windows::Forms::CheckBox^  X64;
 	private: System::Windows::Forms::CheckBox^  Y50;
 	private: System::Windows::Forms::CheckBox^  Y49;
 	private: System::Windows::Forms::CheckBox^  Y48;
-private: System::Windows::Forms::CheckBox^  Y127;
-private: System::Windows::Forms::CheckBox^  Y126;
-private: System::Windows::Forms::CheckBox^  Y125;
-private: System::Windows::Forms::CheckBox^  Y124;
-private: System::Windows::Forms::CheckBox^  Y123;
-private: System::Windows::Forms::CheckBox^  Y122;
-private: System::Windows::Forms::CheckBox^  Y121;
-private: System::Windows::Forms::CheckBox^  Y120;
-private: System::Windows::Forms::CheckBox^  Y119;
-private: System::Windows::Forms::CheckBox^  Y118;
-private: System::Windows::Forms::CheckBox^  Y117;
-private: System::Windows::Forms::CheckBox^  Y116;
-private: System::Windows::Forms::CheckBox^  Y115;
-private: System::Windows::Forms::CheckBox^  Y114;
-private: System::Windows::Forms::CheckBox^  Y113;
-private: System::Windows::Forms::CheckBox^  Y112;
-private: System::Windows::Forms::CheckBox^  Y111;
-private: System::Windows::Forms::CheckBox^  Y110;
-private: System::Windows::Forms::CheckBox^  Y109;
-private: System::Windows::Forms::CheckBox^  Y108;
-private: System::Windows::Forms::CheckBox^  Y107;
-private: System::Windows::Forms::CheckBox^  Y106;
-private: System::Windows::Forms::CheckBox^  Y105;
-private: System::Windows::Forms::CheckBox^  Y104;
-private: System::Windows::Forms::CheckBox^  Y103;
-private: System::Windows::Forms::CheckBox^  Y102;
-private: System::Windows::Forms::CheckBox^  Y101;
-private: System::Windows::Forms::CheckBox^  Y100;
-private: System::Windows::Forms::CheckBox^  Y99;
-private: System::Windows::Forms::CheckBox^  Y98;
-private: System::Windows::Forms::CheckBox^  Y97;
-private: System::Windows::Forms::CheckBox^  Y96;
-private: System::Windows::Forms::CheckBox^  Y95;
-private: System::Windows::Forms::CheckBox^  Y94;
-private: System::Windows::Forms::CheckBox^  Y93;
-private: System::Windows::Forms::CheckBox^  Y92;
-private: System::Windows::Forms::CheckBox^  Y91;
-private: System::Windows::Forms::CheckBox^  Y90;
-private: System::Windows::Forms::CheckBox^  Y89;
-private: System::Windows::Forms::CheckBox^  Y88;
-private: System::Windows::Forms::CheckBox^  Y87;
-private: System::Windows::Forms::CheckBox^  Y86;
-private: System::Windows::Forms::CheckBox^  Y85;
-private: System::Windows::Forms::CheckBox^  Y84;
-private: System::Windows::Forms::CheckBox^  Y83;
-private: System::Windows::Forms::CheckBox^  Y82;
-private: System::Windows::Forms::CheckBox^  Y81;
-private: System::Windows::Forms::CheckBox^  Y80;
-private: System::Windows::Forms::CheckBox^  Y79;
-private: System::Windows::Forms::CheckBox^  Y78;
-private: System::Windows::Forms::CheckBox^  Y77;
-private: System::Windows::Forms::CheckBox^  Y76;
-private: System::Windows::Forms::CheckBox^  Y75;
-private: System::Windows::Forms::CheckBox^  Y74;
-private: System::Windows::Forms::CheckBox^  Y73;
-private: System::Windows::Forms::CheckBox^  Y72;
-private: System::Windows::Forms::CheckBox^  Y71;
-private: System::Windows::Forms::CheckBox^  Y70;
-private: System::Windows::Forms::CheckBox^  Y69;
-private: System::Windows::Forms::CheckBox^  Y68;
-private: System::Windows::Forms::CheckBox^  Y67;
-private: System::Windows::Forms::CheckBox^  Y66;
-private: System::Windows::Forms::CheckBox^  Y65;
-private: System::Windows::Forms::CheckBox^  Y64;
-private: System::Windows::Forms::GroupBox^  groupBox2;
+	private: System::Windows::Forms::CheckBox^  Y127;
+	private: System::Windows::Forms::CheckBox^  Y126;
+	private: System::Windows::Forms::CheckBox^  Y125;
+	private: System::Windows::Forms::CheckBox^  Y124;
+	private: System::Windows::Forms::CheckBox^  Y123;
+	private: System::Windows::Forms::CheckBox^  Y122;
+	private: System::Windows::Forms::CheckBox^  Y121;
+	private: System::Windows::Forms::CheckBox^  Y120;
+	private: System::Windows::Forms::CheckBox^  Y119;
+	private: System::Windows::Forms::CheckBox^  Y118;
+	private: System::Windows::Forms::CheckBox^  Y117;
+	private: System::Windows::Forms::CheckBox^  Y116;
+	private: System::Windows::Forms::CheckBox^  Y115;
+	private: System::Windows::Forms::CheckBox^  Y114;
+	private: System::Windows::Forms::CheckBox^  Y113;
+	private: System::Windows::Forms::CheckBox^  Y112;
+	private: System::Windows::Forms::CheckBox^  Y111;
+	private: System::Windows::Forms::CheckBox^  Y110;
+	private: System::Windows::Forms::CheckBox^  Y109;
+	private: System::Windows::Forms::CheckBox^  Y108;
+	private: System::Windows::Forms::CheckBox^  Y107;
+	private: System::Windows::Forms::CheckBox^  Y106;
+	private: System::Windows::Forms::CheckBox^  Y105;
+	private: System::Windows::Forms::CheckBox^  Y104;
+	private: System::Windows::Forms::CheckBox^  Y103;
+	private: System::Windows::Forms::CheckBox^  Y102;
+	private: System::Windows::Forms::CheckBox^  Y101;
+	private: System::Windows::Forms::CheckBox^  Y100;
+	private: System::Windows::Forms::CheckBox^  Y99;
+	private: System::Windows::Forms::CheckBox^  Y98;
+	private: System::Windows::Forms::CheckBox^  Y97;
+	private: System::Windows::Forms::CheckBox^  Y96;
+	private: System::Windows::Forms::CheckBox^  Y95;
+	private: System::Windows::Forms::CheckBox^  Y94;
+	private: System::Windows::Forms::CheckBox^  Y93;
+	private: System::Windows::Forms::CheckBox^  Y92;
+	private: System::Windows::Forms::CheckBox^  Y91;
+	private: System::Windows::Forms::CheckBox^  Y90;
+	private: System::Windows::Forms::CheckBox^  Y89;
+	private: System::Windows::Forms::CheckBox^  Y88;
+	private: System::Windows::Forms::CheckBox^  Y87;
+	private: System::Windows::Forms::CheckBox^  Y86;
+	private: System::Windows::Forms::CheckBox^  Y85;
+	private: System::Windows::Forms::CheckBox^  Y84;
+	private: System::Windows::Forms::CheckBox^  Y83;
+	private: System::Windows::Forms::CheckBox^  Y82;
+	private: System::Windows::Forms::CheckBox^  Y81;
+	private: System::Windows::Forms::CheckBox^  Y80;
+	private: System::Windows::Forms::CheckBox^  Y79;
+	private: System::Windows::Forms::CheckBox^  Y78;
+	private: System::Windows::Forms::CheckBox^  Y77;
+	private: System::Windows::Forms::CheckBox^  Y76;
+	private: System::Windows::Forms::CheckBox^  Y75;
+	private: System::Windows::Forms::CheckBox^  Y74;
+	private: System::Windows::Forms::CheckBox^  Y73;
+	private: System::Windows::Forms::CheckBox^  Y72;
+	private: System::Windows::Forms::CheckBox^  Y71;
+	private: System::Windows::Forms::CheckBox^  Y70;
+	private: System::Windows::Forms::CheckBox^  Y69;
+	private: System::Windows::Forms::CheckBox^  Y68;
+	private: System::Windows::Forms::CheckBox^  Y67;
+	private: System::Windows::Forms::CheckBox^  Y66;
+	private: System::Windows::Forms::CheckBox^  Y65;
+	private: System::Windows::Forms::CheckBox^  Y64;
+	private: System::Windows::Forms::GroupBox^  groupBox2;
+	private: System::Windows::Forms::Label^  NLabel;
+	private: System::Windows::Forms::Label^  TLabel;
+	private: System::Windows::Forms::TextBox^  NTextBox;
+	private: System::Windows::Forms::TextBox^  TTextBox;
+	private: System::Windows::Forms::TextBox^  RoundTextBox;
+	private: System::Windows::Forms::Label^  RoundLabel;
+	private: System::Windows::Forms::Button^  AllXBtn;
+	private: System::Windows::Forms::Button^  AllYBtn;
+
+
+
 
 
 	protected:
@@ -602,6 +614,14 @@ private: System::Windows::Forms::GroupBox^  groupBox2;
 			this->Y2 = (gcnew System::Windows::Forms::CheckBox());
 			this->Y1 = (gcnew System::Windows::Forms::CheckBox());
 			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
+			this->NLabel = (gcnew System::Windows::Forms::Label());
+			this->TLabel = (gcnew System::Windows::Forms::Label());
+			this->NTextBox = (gcnew System::Windows::Forms::TextBox());
+			this->TTextBox = (gcnew System::Windows::Forms::TextBox());
+			this->RoundTextBox = (gcnew System::Windows::Forms::TextBox());
+			this->RoundLabel = (gcnew System::Windows::Forms::Label());
+			this->AllXBtn = (gcnew System::Windows::Forms::Button());
+			this->AllYBtn = (gcnew System::Windows::Forms::Button());
 			this->groupBox1->SuspendLayout();
 			this->groupBox2->SuspendLayout();
 			this->SuspendLayout();
@@ -611,7 +631,7 @@ private: System::Windows::Forms::GroupBox^  groupBox2;
 			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18.25F));
 			this->button1->Location = System::Drawing::Point(12, 12);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(192, 68);
+			this->button1->Size = System::Drawing::Size(192, 36);
 			this->button1->TabIndex = 0;
 			this->button1->Text = L"Сделать всё";
 			this->button1->UseVisualStyleBackColor = true;
@@ -619,11 +639,11 @@ private: System::Windows::Forms::GroupBox^  groupBox2;
 			// 
 			// MainTextBox
 			// 
-			this->MainTextBox->Location = System::Drawing::Point(12, 86);
+			this->MainTextBox->Location = System::Drawing::Point(12, 104);
 			this->MainTextBox->Multiline = true;
 			this->MainTextBox->Name = L"MainTextBox";
 			this->MainTextBox->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
-			this->MainTextBox->Size = System::Drawing::Size(192, 323);
+			this->MainTextBox->Size = System::Drawing::Size(192, 305);
 			this->MainTextBox->TabIndex = 1;
 			// 
 			// groupBox1
@@ -3460,11 +3480,90 @@ private: System::Windows::Forms::GroupBox^  groupBox2;
 			this->groupBox2->TabStop = false;
 			this->groupBox2->Text = L"Биты Y";
 			// 
+			// NLabel
+			// 
+			this->NLabel->AutoSize = true;
+			this->NLabel->Location = System::Drawing::Point(12, 55);
+			this->NLabel->Name = L"NLabel";
+			this->NLabel->Size = System::Drawing::Size(27, 13);
+			this->NLabel->TabIndex = 4;
+			this->NLabel->Text = L"N = ";
+			// 
+			// TLabel
+			// 
+			this->TLabel->AutoSize = true;
+			this->TLabel->Location = System::Drawing::Point(13, 81);
+			this->TLabel->Name = L"TLabel";
+			this->TLabel->Size = System::Drawing::Size(26, 13);
+			this->TLabel->TabIndex = 5;
+			this->TLabel->Text = L"T = ";
+			// 
+			// NTextBox
+			// 
+			this->NTextBox->Location = System::Drawing::Point(42, 52);
+			this->NTextBox->Name = L"NTextBox";
+			this->NTextBox->Size = System::Drawing::Size(60, 20);
+			this->NTextBox->TabIndex = 6;
+			this->NTextBox->Text = L"1000";
+			// 
+			// TTextBox
+			// 
+			this->TTextBox->Enabled = false;
+			this->TTextBox->Location = System::Drawing::Point(42, 79);
+			this->TTextBox->Name = L"TTextBox";
+			this->TTextBox->Size = System::Drawing::Size(60, 20);
+			this->TTextBox->TabIndex = 7;
+			// 
+			// RoundTextBox
+			// 
+			this->RoundTextBox->Location = System::Drawing::Point(144, 52);
+			this->RoundTextBox->Name = L"RoundTextBox";
+			this->RoundTextBox->Size = System::Drawing::Size(60, 20);
+			this->RoundTextBox->TabIndex = 9;
+			this->RoundTextBox->Text = L"1";
+			// 
+			// RoundLabel
+			// 
+			this->RoundLabel->AutoSize = true;
+			this->RoundLabel->Location = System::Drawing::Point(114, 55);
+			this->RoundLabel->Name = L"RoundLabel";
+			this->RoundLabel->Size = System::Drawing::Size(27, 13);
+			this->RoundLabel->TabIndex = 8;
+			this->RoundLabel->Text = L"R = ";
+			// 
+			// AllXBtn
+			// 
+			this->AllXBtn->Location = System::Drawing::Point(633, 24);
+			this->AllXBtn->Name = L"AllXBtn";
+			this->AllXBtn->Size = System::Drawing::Size(18, 70);
+			this->AllXBtn->TabIndex = 10;
+			this->AllXBtn->Text = L"Все X";
+			this->AllXBtn->UseVisualStyleBackColor = true;
+			this->AllXBtn->Click += gcnew System::EventHandler(this, &Main::AllXBtn_Click);
+			// 
+			// AllYBtn
+			// 
+			this->AllYBtn->Location = System::Drawing::Point(633, 101);
+			this->AllYBtn->Name = L"AllYBtn";
+			this->AllYBtn->Size = System::Drawing::Size(18, 70);
+			this->AllYBtn->TabIndex = 11;
+			this->AllYBtn->Text = L"Все Y";
+			this->AllYBtn->UseVisualStyleBackColor = true;
+			this->AllYBtn->Click += gcnew System::EventHandler(this, &Main::AllYBtn_Click);
+			// 
 			// Main
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(1088, 421);
+			this->Controls->Add(this->AllYBtn);
+			this->Controls->Add(this->AllXBtn);
+			this->Controls->Add(this->RoundTextBox);
+			this->Controls->Add(this->RoundLabel);
+			this->Controls->Add(this->TTextBox);
+			this->Controls->Add(this->NTextBox);
+			this->Controls->Add(this->TLabel);
+			this->Controls->Add(this->NLabel);
 			this->Controls->Add(this->groupBox2);
 			this->Controls->Add(this->groupBox1);
 			this->Controls->Add(this->MainTextBox);
@@ -3482,15 +3581,72 @@ private: System::Windows::Forms::GroupBox^  groupBox2;
 #pragma endregion
 
 	private:
-		
-		SM4* SM4s; 
-		bool bitsX[128];
-		bool bitsY[128];
+
+		SM4* SM4s;
+		bool* bitsX;
+		bool* bitsY;
+
+		void InitBitsCheckboxesValues()
+		{
+			bitsX = new bool[128];
+			bitsY = new bool[128];
+
+			for (int i = 0; i < 128; i++)
+			{
+				auto elementX = this->Controls->Find("X" + i, true);
+				auto elementY = this->Controls->Find("Y" + i, true);
+				if (elementX->Length > 0)
+				{
+					CheckBox^ checkBox = (CheckBox^)elementX[0];
+					bitsX[i] = checkBox->Checked;
+				}
+				if (elementY->Length > 0)
+				{
+					CheckBox^ checkBox = (CheckBox^)elementY[0];
+					bitsY[i] = checkBox->Checked;
+				}
+			}
+		}
 
 		System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-		String^ s = gcnew	String(SM4s->SM4Processing().str().c_str());
-		MainTextBox->Text = s;
-		
+			size_t *_Idx = 0;
+			string tN = msclr::interop::marshal_as<string>(NTextBox->Text);
+			string tR = msclr::interop::marshal_as<string>(RoundTextBox->Text);
+			int N = stoi(tN, _Idx, 10);
+			int R = stoi(tR, _Idx, 10);
+			if (N > 0)
+				SM4s->size = N;
+			if (R > 0)
+				SM4s->rounds = R * 4;
+			String^ s = gcnew	String(SM4s->SM4Processing().str().c_str());
+			MainTextBox->Text = s;
+			InitBitsCheckboxesValues();
+			SM4s->GetCountOfT(bitsX, bitsY);
+			TTextBox->Text = SM4s->T.ToString();
+
+		}
+	private: System::Void AllXBtn_Click(System::Object^  sender, System::EventArgs^  e) {
+
+		for (int i = 0; i < 128; i++)
+		{
+			auto elementX = this->Controls->Find("X" + i, true);
+			if (elementX->Length > 0)
+			{
+				CheckBox^ checkBox = (CheckBox^)elementX[0];
+				checkBox->Checked = true;
+			}
+		}
+	}
+	private: System::Void AllYBtn_Click(System::Object^  sender, System::EventArgs^  e) {
+		for (int i = 0; i < 128; i++)
+		{
+			auto elementY = this->Controls->Find("Y" + i, true);
+			if (elementY->Length > 0)
+			{
+				CheckBox^ checkBox = (CheckBox^)elementY[0];
+				checkBox->Checked = true;
+			}
+		}
 	}
 	};
 }

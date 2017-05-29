@@ -34,8 +34,7 @@ unsigned int SM4::L_1(int a) {
 }
 
 stringstream SM4::SM4Processing() {
-	int size = 100;
-	Generator gen;
+
 	gen.GenerateInputs(size);
 	/*for (int i = 0; i < size; i++)
 	{
@@ -97,8 +96,86 @@ stringstream SM4::SM4Processing() {
 			else
 				Y[i] = Y[i - 4] ^ L(Y[i - 3] ^ Y[i - 2] ^ Y[i - 1] ^ rk[rounds - 1 - i]);
 			out << "Y[" << dec << i << "]" << hex << Y[i] << "\r\n";
+
+			if(i == rounds - 1)
+			{
+				gen.outY[0][m] = Y[i - 3];
+				gen.outY[1][m] = Y[i - 2];
+				gen.outY[2][m] = Y[i - 1];
+				gen.outY[3][m] = Y[i];
+			}
+
 			//out += "Y[" + i + "]" + Y[i] + "\n";
 		}
 	}
 	return out;
+}
+
+void SM4::GetCountOfT(bool* bitsX, bool* bitsY)
+{
+	T = 0;
+	unsigned int bit = 1;
+	for (int i = 0; i < size; i++)
+	{
+		unsigned int x = 0;
+		unsigned int y = 0;
+		bool first = false;
+		for (int j = 0; j < 128; j++)
+		{
+			if (bitsX[j])
+			{
+				if (!first)
+				{
+					x = (gen.inBox[0][i] >> j) & bit;
+					continue;
+				}
+				if (j > 31)
+				{
+					x = x ^ ((gen.inBox[1][i] >> j - 31) & bit);
+				}
+				else
+					if (j > 63)
+					{
+						x = x ^ ((gen.inBox[1][i] >> j - 63) & bit);
+					}
+					else
+						if (j > 95)
+						{
+							x = x ^ ((gen.inBox[1][i] >> j - 95) & bit);
+						}
+						else
+							x = x ^ ((gen.inBox[0][i] >> j) & bit);
+			}
+		}
+
+		for (int j = 0; j < 128; j++)
+		{
+			if (bitsY[j])
+			{
+				if (!first)
+				{
+					y = (gen.outY[0][i] >> j) & bit;
+					continue;
+				}
+				if (j > 31)
+				{
+					y = y ^ ((gen.outY[1][i] >> j - 31) & bit);
+				}
+				else
+					if (j > 63)
+					{
+						y = y ^ ((gen.outY[1][i] >> j - 63) & bit);
+					}
+					else
+						if (j > 95)
+						{
+							y = y ^ ((gen.outY[1][i] >> j - 95) & bit);
+						}
+						else
+							y = y ^ ((gen.outY[0][i] >> j) & bit);
+			}
+		}
+		if (x ^ y == 0)
+			T++;
+	}
 }

@@ -12,7 +12,7 @@ using namespace std;
 class SM4
 {
 public:
-	int rounds = 4;
+
 	unsigned int M[4] = {
 		0x01234567,
 		0x89abcdef,
@@ -67,12 +67,17 @@ public:
 		0x10171e25, 0x2c333a41, 0x484f565d, 0x646b7279
 	};
 
+	int rounds = 32;
+	int size = 100;
+	Generator gen;
+	int T = 0;
+
 	unsigned int rk[32] = { 0, };
 	unsigned int rk2[32] = { 0, };
 
 	unsigned int X[32] = { 0, };
 
-	unsigned int Y[32] = { 0, };
+	unsigned int Y[128] = { 0, };
 
 	unsigned int K[4] = { 0, };
 
@@ -83,5 +88,5 @@ public:
 	unsigned int L_1(int a);
 
 	stringstream SM4Processing();
-	
+	void GetCountOfT(bool* bitsX, bool* bitsY);
 };
