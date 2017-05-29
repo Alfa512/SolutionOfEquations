@@ -3483,7 +3483,7 @@ private: System::Windows::Forms::GroupBox^  groupBox2;
 
 	private:
 		
-		SM4* SM4s;
+		SM4* SM4s; 
 		bool bitsX[128];
 		bool bitsY[128];
 
